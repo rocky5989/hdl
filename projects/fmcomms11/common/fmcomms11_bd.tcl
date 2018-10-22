@@ -98,6 +98,7 @@ ad_xcvrcon  util_fmcomms11_xcvr axi_ad9625_xcvr axi_ad9625_jesd
 ad_connect  util_fmcomms11_xcvr/rx_out_clk_0 axi_ad9625_core/rx_clk
 ad_connect  axi_ad9625_jesd/rx_sof axi_ad9625_core/rx_sof
 ad_connect  axi_ad9625_jesd/rx_data_tdata axi_ad9625_core/rx_data
+ad_connect  axi_ad9625_jesd/rx_data_tvalid axi_ad9625_core/rx_valid
 ad_connect  util_fmcomms11_xcvr/rx_out_clk_0 axi_ad9625_fifo/adc_clk
 ad_connect  axi_ad9625_jesd_rstgen/peripheral_reset axi_ad9625_fifo/adc_rst
 ad_connect  axi_ad9625_core/adc_valid axi_ad9625_fifo/adc_wr
